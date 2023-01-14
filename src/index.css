@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  text-decoration: none;
 }
 
 body {
@@ -10,7 +11,9 @@ body {
 }
 
 :root {
+  --background-dark: #111111;
   --background: #1a1a1a;
+  --background-100: #3a3a3a;
   --text-primary: #272ab0;
   --text-secondary: #276bb0;
   --white: #f9f9f9;
