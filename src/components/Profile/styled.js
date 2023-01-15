@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProfileContainer = styled.div`
   display: flex;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
 `;
@@ -12,10 +12,14 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 1000px;
-  height: 100vh;
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  padding: 100px 0;
+
+  @media (max-width: 1100px) {
+    width: 80%;
+  }
 `;
 
 export const ProfileHeader = styled.div`
@@ -33,7 +37,18 @@ export const ProfileHeader = styled.div`
   img {
     width: 200px;
     height: 200px;
-    border-radius: 100%;
+    border-radius: 25px 50px;
+  }
+
+  @media (max-width: 1100px) {
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 3rem;
+    text-align: center;
+
+    .responsive {
+      font-size: 20px;
+    }
   }
 `;
 
@@ -56,4 +71,9 @@ export const ContainerSocialMedia = styled.div`
   width: 100%;
   gap: 3rem;
   justify-content: center;
+
+  @media (max-width: 900px) {
+    align-items: center;
+    flex-direction: column;
+  }
 `;

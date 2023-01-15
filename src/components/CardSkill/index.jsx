@@ -4,7 +4,7 @@ import { Tooltip } from "react-tooltip";
 
 export const CardSkill = (props) => {
   return (
-    <SkillContainer>
+    <SkillContainer data-aos="zoom-in-up">
       <Tooltip anchorId={props.alt} />
       <img
         id={props.alt}

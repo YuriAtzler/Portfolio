@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
-export const SkillContainer = styled.div`
+export const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background-color: var(--background-dark);
 `;
 
 export const Wrapper = styled.div`
@@ -24,6 +23,7 @@ export const Wrapper = styled.div`
 `;
 
 export const ContainerList = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;

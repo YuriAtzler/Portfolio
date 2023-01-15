@@ -26,7 +26,10 @@ export const Profile = () => {
       <Wrapper>
         <ProfileHeader>
           <div>
-            <Components.TextGradientComponent size={"55px"} weight={"bold"}>
+            <Components.TextGradientComponent
+              size={`${window.innerWidth <= 900 ? "35px" : "55px"}`}
+              weight={"bold"}
+            >
               Yuri N. Atzler
             </Components.TextGradientComponent>
             <Components.Divider
@@ -34,7 +37,10 @@ export const Profile = () => {
               width={"90%"}
               color={"var(--background-100)"}
             />
-            <Components.TextNormalComponent size="25px" italic>
+            <Components.TextNormalComponent
+              size={`${window.innerWidth <= 900 ? "15px" : "25px"}`}
+              italic
+            >
               Front-End Developer
             </Components.TextNormalComponent>
           </div>
@@ -43,7 +49,7 @@ export const Profile = () => {
           </div>
         </ProfileHeader>
 
-        <ContainerSocialMedia>
+        <ContainerSocialMedia data-aos="zoom-in">
           <Components.SocialMedia link={"https://github.com/YuriAtzler"}>
             <Components.TextNormalComponent>
               GitHub
@@ -67,8 +73,10 @@ export const Profile = () => {
         </ContainerSocialMedia>
 
         <ProfileBody>
-          <Components.TagScript>Sobre Min</Components.TagScript>
-          <p>
+          <div style={{ display: "flex" }} data-aos="fade-right">
+            <Components.TagScript open>Sobre Min</Components.TagScript>
+          </div>
+          <p data-aos="zoom-in">
             Estudante de Sistemas da Informação, apaixonado por tecnologia e
             programação, atualmente com 22 anose no 7° semestre do curso de
             Sistemas de Informação, possuo experiência de um pouco mais de 1 ano
@@ -76,7 +84,9 @@ export const Profile = () => {
             desenvolvedor full-stack. Estou sempre disposto anovas experiências
             e desafios.
           </p>
-          <Components.TagScript closed>Sobre Min</Components.TagScript>
+          <div style={{ display: "flex" }} data-aos="fade-left">
+            <Components.TagScript closed>Sobre Min</Components.TagScript>
+          </div>
         </ProfileBody>
       </Wrapper>
     </ProfileContainer>
