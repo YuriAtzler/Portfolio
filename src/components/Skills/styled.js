@@ -27,6 +27,7 @@ export const ContainerList = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: center;
 `;
 
 export const List = styled.div`
@@ -35,6 +36,7 @@ export const List = styled.div`
   gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 `;
 
 export const ContainerDescription = styled.div`
