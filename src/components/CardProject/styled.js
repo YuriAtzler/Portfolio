@@ -4,9 +4,11 @@ export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 300px;
+  height: 350px;
 
   @media screen and (max-width: 900px) {
     width: 200px;
+    height: 250px;
   }
 `;
 
@@ -37,10 +39,19 @@ export const ContainerDescription = styled.div`
       rgba(255, 255, 255, 0.1)
     );
     -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 
     :hover {
       cursor: pointer;
+    }
+  }
+
+  @media (max-width: 900px) {
+    p {
+      font-size: 12px;
     }
   }
 `;

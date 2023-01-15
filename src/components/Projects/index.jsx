@@ -13,6 +13,7 @@ import backgroundDetail from "../../assets/backgroundDetail01.png";
 export const Projects = () => {
   return (
     <ProjectsContainer
+      id="projects"
       style={{
         backgroundImage: `url(${backgroundDetail})`,
         backgroundSize: "cover",

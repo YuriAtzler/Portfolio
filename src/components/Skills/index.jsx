@@ -11,7 +11,7 @@ import { ArrSkills } from "../../assets/skills";
 
 export const Skills = () => {
   return (
-    <SkillContainer>
+    <SkillContainer id="skills">
       <Wrapper>
         <ContainerDescription data-aos="fade-down">
           <Components.TextGradientComponent

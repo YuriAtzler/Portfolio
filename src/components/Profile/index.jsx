@@ -8,17 +8,14 @@ import {
   ContainerSocialMedia,
   Wrapper,
 } from "./styled";
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-  AiOutlineDownload,
-} from "react-icons/ai";
+import { FaLinkedinIn, FaDownload, FaGithub } from "react-icons/fa";
 import curriculo from "../../assets/curriculo.pdf";
 import backgroundDetail from "../../assets/backgroundDetail01.png";
 
 export const Profile = () => {
   return (
     <ProfileContainer
+      id="profile"
       style={{
         backgroundImage: `url(${backgroundDetail})`,
         backgroundSize: "cover",
@@ -55,7 +52,7 @@ export const Profile = () => {
             <Components.TextNormalComponent>
               GitHub
             </Components.TextNormalComponent>
-            <AiFillGithub fontSize={35} />
+            <FaGithub fontSize={25} />
           </Components.SocialMedia>
           <Components.SocialMedia
             link={"https://www.linkedin.com/in/yurinunesatzler/"}
@@ -63,13 +60,13 @@ export const Profile = () => {
             <Components.TextNormalComponent>
               LinkedIn
             </Components.TextNormalComponent>
-            <AiFillLinkedin fontSize={35} />
+            <FaLinkedinIn fontSize={25} />
           </Components.SocialMedia>
           <Components.SocialMedia link={curriculo}>
             <Components.TextNormalComponent>
               Currículo
             </Components.TextNormalComponent>
-            <AiOutlineDownload fontSize={35} />
+            <FaDownload fontSize={25} />
           </Components.SocialMedia>
         </ContainerSocialMedia>
 

@@ -7,3 +7,5 @@ export * from "./CardSkill";
 export * from "./Skills";
 export * from "./CardProject";
 export * from "./Projects";
+export * from "./Footer";
+export * from "./Navigator";

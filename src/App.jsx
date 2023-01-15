@@ -20,6 +20,8 @@ export const App = () => {
       <Components.Profile />
       <Components.Skills />
       <Components.Projects />
+      <Components.Footer />
+      <Components.Navigator />
     </BodyContainer>
   );
 };

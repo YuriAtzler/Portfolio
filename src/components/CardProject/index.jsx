@@ -15,10 +15,17 @@ export const CardProject = (props) => {
       data-aos-anchor-placement="top-center"
     >
       <ContainerTitle>
-        <Components.TextNormalComponent size={"20px"} weight={"bold"}>
+        <Components.TextNormalComponent
+          size={`${window.innerWidth <= 900 ? "14px" : "20px"}`}
+          weight={"bold"}
+        >
           {props.name}
         </Components.TextNormalComponent>
-        <Components.TextNormalComponent italic color={"rgba(255,255,255, 0.5)"}>
+        <Components.TextNormalComponent
+          italic
+          color={"rgba(255,255,255, 0.5)"}
+          size={`${window.innerWidth <= 900 ? "12px" : "16px"}`}
+        >
           {props.date}
         </Components.TextNormalComponent>
       </ContainerTitle>
@@ -31,7 +38,10 @@ export const CardProject = (props) => {
         style={{ width: "300px", opacity: 1 }}
       />
       <ContainerDescription>
-        <Components.TextNormalComponent weight={"bold"}>
+        <Components.TextNormalComponent
+          weight={"bold"}
+          size={`${window.innerWidth <= 900 ? "12px" : "16px"}`}
+        >
           Descrição
         </Components.TextNormalComponent>
         <p id={props.name} data-tooltip-content={props.description}>
