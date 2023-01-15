@@ -30,7 +30,7 @@ export const ContainerList = styled.div`
 `;
 
 export const List = styled.div`
-  width: 100%;
+  width: 90%;
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;

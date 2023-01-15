@@ -12,4 +12,14 @@ export const SkillContainer = styled.div`
       cursor: pointer;
     }
   }
+
+  @media screen and (max-width: 900px) {
+    width: 75px;
+    height: 75px;
+
+    img {
+      width: 75px;
+      height: 75px;
+    }
+  }
 `;
