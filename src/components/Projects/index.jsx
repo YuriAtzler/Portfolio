@@ -30,15 +30,15 @@ export const Projects = () => {
         </ContainerDescription>
         <ContainerList>
           <Components.Divider width={"90%"} color={"var(--background-100)"} />
-          <Components.TagScript open>Projetos</Components.TagScript>
+          <Components.TagScript right open>
+            Projetos
+          </Components.TagScript>
           <List>
             {ArrProjects.map((item) => (
               <Components.CardProject key={item.name} {...item} />
             ))}
           </List>
-          <Components.TagScript right closed>
-            Projetos
-          </Components.TagScript>
+          <Components.TagScript closed>Projetos</Components.TagScript>
         </ContainerList>
       </Wrapper>
     </ProjectsContainer>

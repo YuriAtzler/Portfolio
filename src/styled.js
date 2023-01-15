@@ -6,4 +6,5 @@ export const BodyContainer = styled.div`
   align-items: center;
   max-width: 100vw;
   background-color: var(--background);
+  overflow-x: hidden;
 `;

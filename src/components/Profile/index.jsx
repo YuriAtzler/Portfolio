@@ -71,7 +71,9 @@ export const Profile = () => {
         </ContainerSocialMedia>
 
         <ProfileBody>
-          <Components.TagScript open>Sobre Min</Components.TagScript>
+          <Components.TagScript right open>
+            Sobre Min
+          </Components.TagScript>
           <p data-aos="zoom-in">
             Estudante de Sistemas da Informação, apaixonado por tecnologia e
             programação, atualmente com 22 anose no 7° semestre do curso de
@@ -80,9 +82,7 @@ export const Profile = () => {
             desenvolvedor full-stack. Estou sempre disposto anovas experiências
             e desafios.
           </p>
-          <Components.TagScript right closed>
-            Sobre Min
-          </Components.TagScript>
+          <Components.TagScript closed>Sobre Min</Components.TagScript>
         </ProfileBody>
       </Wrapper>
     </ProfileContainer>
