@@ -12,7 +12,6 @@ export const App = () => {
     AOS.init({
       offset: -50,
       duration: 1200,
-      easing: "ease",
     });
   }, []);
 

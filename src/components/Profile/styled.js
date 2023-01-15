@@ -17,8 +17,9 @@ export const Wrapper = styled.div`
   gap: 3rem;
   padding: 100px 0;
 
-  @media (max-width: 1100px) {
+  @media screen and (max-width: 1100px) {
     width: 80%;
+    gap: 2rem;
   }
 `;
 
@@ -26,7 +27,7 @@ export const ProfileHeader = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  width: 90%;
 
   div {
     display: flex;
@@ -40,14 +41,15 @@ export const ProfileHeader = styled.div`
     border-radius: 25px 50px;
   }
 
-  @media (max-width: 1100px) {
+  @media screen and (max-width: 1100px) {
     align-items: center;
     flex-direction: column-reverse;
-    gap: 3rem;
+    gap: 2rem;
     text-align: center;
 
-    .responsive {
-      font-size: 20px;
+    img {
+      width: 150px;
+      height: 150px;
     }
   }
 `;
@@ -72,8 +74,9 @@ export const ContainerSocialMedia = styled.div`
   gap: 3rem;
   justify-content: center;
 
-  @media (max-width: 900px) {
+  @media screen and (max-width: 900px) {
     align-items: center;
     flex-direction: column;
+    gap: 1.5rem;
   }
 `;

@@ -4,6 +4,10 @@ export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 300px;
+
+  @media screen and (max-width: 900px) {
+    width: 200px;
+  }
 `;
 
 export const ContainerTitle = styled.div`

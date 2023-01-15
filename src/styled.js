@@ -5,6 +5,5 @@ export const BodyContainer = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 100vw;
-  min-height: 100vh;
   background-color: var(--background);
 `;

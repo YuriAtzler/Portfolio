@@ -23,6 +23,9 @@ export const TextGradient = styled.h1`
     #f39c12
   );
   -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  background-clip: text;
   animation: animate 5s linear infinite;
   -webkit-background-size: 500%;
   background-size: 500%;

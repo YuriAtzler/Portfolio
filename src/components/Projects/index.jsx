@@ -15,27 +15,29 @@ export const Projects = () => {
     <ProjectsContainer
       style={{
         backgroundImage: `url(${backgroundDetail})`,
+        backgroundSize: "cover",
       }}
     >
       <Wrapper>
         <ContainerDescription data-aos="fade-down">
-          <Components.TextGradientComponent size={`${window.innerWidth <= 900 ? "35px" : "55px"}`} weight={"bold"}>
+          <Components.TextGradientComponent
+            size={`${window.innerWidth <= 900 ? "35px" : "55px"}`}
+            weight={"bold"}
+          >
             Projetos Realizados
           </Components.TextGradientComponent>
         </ContainerDescription>
         <ContainerList>
           <Components.Divider width={"90%"} color={"var(--background-100)"} />
-          <div style={{ display: "flex" }} data-aos="fade-right">
-            <Components.TagScript open>Projetos</Components.TagScript>
-          </div>
+          <Components.TagScript open>Projetos</Components.TagScript>
           <List>
             {ArrProjects.map((item) => (
               <Components.CardProject key={item.name} {...item} />
             ))}
           </List>
-          <div style={{ display: "flex" }} data-aos="fade-left">
-            <Components.TagScript closed>Projetos</Components.TagScript>
-          </div>
+          <Components.TagScript right closed>
+            Projetos
+          </Components.TagScript>
         </ContainerList>
       </Wrapper>
     </ProjectsContainer>

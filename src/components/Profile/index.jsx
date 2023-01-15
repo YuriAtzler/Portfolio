@@ -21,6 +21,7 @@ export const Profile = () => {
     <ProfileContainer
       style={{
         backgroundImage: `url(${backgroundDetail})`,
+        backgroundSize: "cover",
       }}
     >
       <Wrapper>
@@ -73,9 +74,7 @@ export const Profile = () => {
         </ContainerSocialMedia>
 
         <ProfileBody>
-          <div style={{ display: "flex" }} data-aos="fade-right">
-            <Components.TagScript open>Sobre Min</Components.TagScript>
-          </div>
+          <Components.TagScript open>Sobre Min</Components.TagScript>
           <p data-aos="zoom-in">
             Estudante de Sistemas da Informação, apaixonado por tecnologia e
             programação, atualmente com 22 anose no 7° semestre do curso de
@@ -84,9 +83,9 @@ export const Profile = () => {
             desenvolvedor full-stack. Estou sempre disposto anovas experiências
             e desafios.
           </p>
-          <div style={{ display: "flex" }} data-aos="fade-left">
-            <Components.TagScript closed>Sobre Min</Components.TagScript>
-          </div>
+          <Components.TagScript right closed>
+            Sobre Min
+          </Components.TagScript>
         </ProfileBody>
       </Wrapper>
     </ProfileContainer>

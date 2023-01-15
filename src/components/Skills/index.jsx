@@ -23,17 +23,15 @@ export const Skills = () => {
         </ContainerDescription>
         <ContainerList>
           <Components.Divider width={"90%"} color={"var(--background-100)"} />
-          <div style={{ display: "flex" }} data-aos="fade-right">
-            <Components.TagScript open>Conhecimentos</Components.TagScript>
-          </div>
+          <Components.TagScript open>Conhecimentos</Components.TagScript>
           <List>
             {ArrSkills.map((item) => (
               <Components.CardSkill key={item.alt} {...item} />
             ))}
           </List>
-          <div style={{ display: "flex" }} data-aos="fade-left">
-            <Components.TagScript closed>Conhecimentos</Components.TagScript>
-          </div>
+          <Components.TagScript right closed>
+            Conhecimentos
+          </Components.TagScript>
         </ContainerList>
       </Wrapper>
     </SkillContainer>
