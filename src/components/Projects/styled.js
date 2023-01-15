@@ -23,18 +23,20 @@ export const Wrapper = styled.div`
 `;
 
 export const ContainerList = styled.div`
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: center;
 `;
 
 export const List = styled.div`
-  width: 100%;
+  width: 90%;
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 `;
 
 export const ContainerDescription = styled.div`
