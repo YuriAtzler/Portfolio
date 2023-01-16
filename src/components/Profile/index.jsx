@@ -75,12 +75,13 @@ export const Profile = () => {
             Sobre Min
           </Components.TagScript>
           <p data-aos="zoom-in">
-            Estudante de Sistemas da Informação, apaixonado por tecnologia e
-            programação, atualmente com 22 anose no 7° semestre do curso de
-            Sistemas de Informação, possuo experiência de um pouco mais de 1 ano
-            naárea de TI e tenho como objetivo primário me tornar um
-            desenvolvedor full-stack. Estou sempre disposto anovas experiências
-            e desafios.
+            Oi me chamo Yuri, tenho 22 anos e curso SI desde de 2020
+            foi quando inicie meus estudos na área de TI, comecei desde
+            cedo jogando video games muito por incentivo da minha fámilia
+            que também gostava, quando conheci a programação eu me senti
+            muito a vontade e animado em aprender mais. Hoje em dia foco
+            meus estudos no desenvolvimento web e pretendo me tornar um dev
+            full-stack.
           </p>
           <Components.TagScript closed>Sobre Min</Components.TagScript>
         </ProfileBody>
