@@ -9,3 +9,4 @@ export * from "./CardProject";
 export * from "./Projects";
 export * from "./Footer";
 export * from "./Navigator";
+export * from "./Contact";

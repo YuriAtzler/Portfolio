@@ -1,6 +1,5 @@
 import React from "react";
 import * as Components from "../";
-import avatar from "../../assets/avatar.png";
 import {
   ProfileBody,
   ProfileContainer,
@@ -42,30 +41,27 @@ export const Profile = () => {
               Front-End Developer
             </Components.TextNormalComponent>
           </div>
-          <div>
-            <img src={avatar} alt="avatar do yuri" />
-          </div>
         </ProfileHeader>
 
         <ContainerSocialMedia data-aos="zoom-in">
           <Components.SocialMedia link={"https://github.com/YuriAtzler"}>
-            <Components.TextNormalComponent>
+            <Components.TextGradientComponent weight={"bold"}>
               GitHub
-            </Components.TextNormalComponent>
+            </Components.TextGradientComponent>
             <FaGithub fontSize={25} />
           </Components.SocialMedia>
           <Components.SocialMedia
             link={"https://www.linkedin.com/in/yurinunesatzler/"}
           >
-            <Components.TextNormalComponent>
+            <Components.TextGradientComponent weight={"bold"}>
               LinkedIn
-            </Components.TextNormalComponent>
+            </Components.TextGradientComponent>
             <FaLinkedinIn fontSize={25} />
           </Components.SocialMedia>
           <Components.SocialMedia link={curriculo}>
-            <Components.TextNormalComponent>
+            <Components.TextGradientComponent weight={"bold"}>
               Currículo
-            </Components.TextNormalComponent>
+            </Components.TextGradientComponent>
             <FaDownload fontSize={25} />
           </Components.SocialMedia>
         </ContainerSocialMedia>
@@ -75,12 +71,13 @@ export const Profile = () => {
             Sobre Min
           </Components.TagScript>
           <p data-aos="zoom-in">
-            Oi me chamo Yuri, tenho 22 anos e curso SI desde de 2020
-            foi quando inicie meus estudos na área de TI, comecei desde
-            cedo jogando video games muito por incentivo da minha fámilia
-            que também gostava, quando conheci a programação eu me senti
-            muito a vontade e animado em aprender mais. Hoje em dia foco
-            meus estudos no desenvolvimento web e pretendo me tornar um dev
+            Oi me chamo Yuri, tenho 22 anos e curso SI desde de 2020 foi quando
+            inicie meus estudos na área de TI, trabalho como desenvolvedor
+            front-end a mais de 1 ano e passei pela formação do Vem ser 10° da
+            DBC Company, um programa de capacitação. <br /> <br /> Também já
+            participei de alguns projetos como desenvolvedor back-end utilizando
+            principalmente nodeJs na criação de apis rest, e tenho como primeiro
+            e principal objetivo de carreira me tornar um desenvolvedor
             full-stack.
           </p>
           <Components.TagScript closed>Sobre Min</Components.TagScript>

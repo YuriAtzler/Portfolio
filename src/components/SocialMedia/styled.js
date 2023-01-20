@@ -5,24 +5,17 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 30px;
-  background-image: linear-gradient(
-    to right,
-    #314755 0%,
-    #26a0da 51%,
-    #314755 100%
-  );
+  background-color: #1a1a1a;
+  border: 2px dashed #5a5a5a;
   text-align: center;
   transition: 0.5s;
   background-size: 200% auto;
-  color: white;
   width: 200px;
   height: 50px;
-  border-radius: 10px;
+  border-radius: 100px;
 
   :hover {
     cursor: pointer;
-    background-position: right center;
-    color: #fff;
-    text-decoration: none;
+    background-color: #2a2a2a;
   }
 `;

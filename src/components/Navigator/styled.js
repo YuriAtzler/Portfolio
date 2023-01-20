@@ -6,10 +6,10 @@ export const NavigatorContainer = styled.div`
   align-items: center;
   justify-content: space-evenly;
   width: 75px;
-  height: 175px;
+  height: 200px;
   background-color: rgba(9, 9, 9, 0.4);
   position: fixed;
-  top: 40%;
+  top: 35%;
   left: 5%;
   border-radius: 10px;
   border: 1px solid #ececec;
