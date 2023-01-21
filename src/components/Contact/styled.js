@@ -40,6 +40,12 @@ export const ContainerForm = styled.div`
   align-items: center;
   flex-direction: column;
 
+  span {
+    color: #ff4444;
+    margin-top: -20px;
+    margin-right: auto;
+  }
+
   .button-submit {
     width: 175px;
     height: 50px;

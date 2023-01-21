@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   SkillContainer,
   ContainerList,
@@ -11,32 +11,42 @@ import {
 import * as Components from "../";
 import { toast } from "react-toastify";
 import axios from "axios";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+
+const schema = yup.object().shape({
+  user_name: yup.string().required("Seu nome é obrigatório!"),
+  user_email: yup
+    .string()
+    .email("E-mail inválido!")
+    .required("Seu e-mail é obrigatório!"),
+  message: yup.string().required("A mensagem é obrigatória!"),
+});
 
 export const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm({ resolver: yupResolver(schema) });
 
-  const sendEmail = () => {
+  const sendEmail = (data) => {
     const send = async () => {
       try {
-        if (!name || !email || !message)
-          throw new Error("Ops!! tem algo faltando!");
-
-        const data = {
+        const dataResult = {
           service_id: process.env.REACT_APP_SERVICE_ID,
           template_id: process.env.REACT_APP_TEMPLATE_ID,
           user_id: process.env.REACT_APP_PUBLIC_KEY,
-          template_params: {
-            user_name: name,
-            user_email: email,
-            message: message,
-          },
+          template_params: data,
         };
 
-        await axios.post("https://api.emailjs.com/api/v1.0/email/send", data);
+        await axios
+          .post("https://api.emailjs.com/api/v1.0/email/send", dataResult)
+          .then(() => reset({ user_email: "", user_name: "", message: "" }));
       } catch (err) {
-        return Promise.reject(err.message);
+        return Promise.reject(err);
       }
     };
     toast.promise(send, {
@@ -68,30 +78,36 @@ export const Contact = () => {
                 <p>Seu nome</p>
               </div>
               <TextInput
-                onChange={(e) => setName(e.target.value)}
+                {...register("user_name")}
                 type="text"
+                placeholder="Digite seu nome..."
               />
             </Field>
+            {errors.user_name && <span>{errors.user_name.message}</span>}
             <Field>
               <div>
                 <p>Seu e-mail</p>
               </div>
               <TextInput
-                onChange={(e) => setEmail(e.target.value)}
-                type="text"
+                {...register("user_email")}
+                type="email"
+                placeholder="Digite seu e-mail..."
               />
             </Field>
+            {errors.user_email && <span>{errors.user_email.message}</span>}
             <Field>
               <div>
                 <p>Mensagem</p>
               </div>
               <textarea
-                onChange={(e) => setMessage(e.target.value)}
+                {...register("message")}
                 type="text"
                 className="description"
+                placeholder="Digite uma mensagem..."
               />
             </Field>
-            <button className="button-submit" onClick={() => sendEmail()}>
+            {errors.message && <span>{errors.message.message}</span>}
+            <button className="button-submit" onClick={handleSubmit(sendEmail)}>
               <Components.TextGradientComponent
                 size={`${window.innerWidth <= 900 ? "15px" : "20px"}`}
                 weight={"bold"}
