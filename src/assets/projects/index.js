@@ -2,6 +2,8 @@ import pageZokaSass from "./page-zoka-sass.png";
 import linkedin from "./linkedin.png";
 import cloneTrello from "./clone-trello.png";
 import remindersApp from "./reminders-app.png";
+import movier from "./movier.png";
+import goSkins from "./go-skins.png";
 
 export const ArrProjects = [
   {
@@ -35,5 +37,21 @@ export const ArrProjects = [
       "Um simples app para salvar tasks ao longo do tempo, práticar a manipulação de datas.",
     date: "Oct 22, 2022",
     link: "https://homework-5-js.vercel.app/",
+  },
+  {
+    name: "Movier",
+    img: movier,
+    description:
+      "Um simples catálago de filmes com a utilização de json-server, o projeto foi criado do zero usando react.",
+    date: "Nov 24, 2022",
+    link: "https://movier-project.vercel.app/",
+  },
+  {
+    name: "Go skins",
+    img: goSkins,
+    description:
+      "Primeiro contato com redux, a ideia era criar um template para sites devendas de skins para o csgo, projeto simples apenas para aprendizado.",
+    date: "Nov 24, 2022",
+    link: "https://e-commerce-redux-snowy.vercel.app/",
   },
 ];
