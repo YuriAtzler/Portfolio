@@ -43,7 +43,6 @@ export const ContainerForm = styled.div`
   span {
     color: #ff4444;
     margin-top: -20px;
-    margin-right: auto;
   }
 
   .button-submit {
