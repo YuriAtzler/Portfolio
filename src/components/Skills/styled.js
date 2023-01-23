@@ -17,6 +17,7 @@ export const Wrapper = styled.div`
   align-items: center;
   gap: 3rem;
   padding: 200px 0;
+  margin: auto;
 
   @media screen and (max-width: 1100px) {
     width: 80%;
